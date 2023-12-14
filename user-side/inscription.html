@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <!-- Inclure le fichier CSS Bootstrap depuis un CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Couleur de fond légère */
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff; /* Couleur de fond du formulaire */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da; /* Couleur de la bordure */
+            border-radius: 4px;
+        }
+
+        .btn-inscrire {
+            background-color: #4caf50; /* Couleur de fond verte */
+            color: #fff; /* Couleur du texte du bouton */
+            cursor: pointer;
+        }
+
+        .btn-inscrire:hover {
+            background-color: #45a049; /* Couleur de fond verte au survol */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Inscription</h2>
+        <form action="inscription.php" method="post">
+            <div class="mb-3">
+                <label for="username" class="form-label">Nom d'utilisateur :</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Mot de passe :</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Adresse email :</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <input type="submit" class="btn btn-inscrire" value="S'inscrire">
+        </form>
+    </div>
+
+    <!-- Inclure les fichiers JS Bootstrap depuis un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

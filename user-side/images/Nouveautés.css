@@ -1,0 +1,110 @@
+body{
+    font-family:Arial;
+    margin: 0px;
+    padding: 0px; 
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(237, 206, 92);
+    text-align: center;
+}
+.
+.main{
+    margin: 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cards .card{
+    margin-right: 20px;
+    cursor: pointer;
+    margin-left: 140px;
+}
+
+.cards .card  img{
+    width: 300px;
+}
+
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.cards .card .card-body p{
+    margin-top: -10px;
+}
+
+
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+}
+
+nav h1{
+    font-size: 30px;
+    color: rgb(206, 183, 148);
+    text-transform: uppercase;
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets p {
+    font-size: 17px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+nav .onglets p:hover{color: rgb(206, 183, 148);}
+
+nav .onglets input{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 30px; 
+    border: 10px;
+    outline: lightpink;
+    background-color: rgb(196, 190, 190);
+    width: 250px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    font-size: 50px;
+    font-style: italic;
+    color:darkolivegreen;
+}

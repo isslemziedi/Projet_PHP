@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4f8;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 120%;
+    margin-left: 150px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #EFC3CA;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #A4968D;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #EFC3CA;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #A4968D;
+}
+
+.image-container2{
+    margin-left: 30px; 
+    margin-right: -370px;
+    margin-top: -270px;
+}
+.image-container3{
+    margin-left: 20px; 
+    margin-right: -570px;
+    margin-top: 400px;
+}
+.img1{
+    max-width: 200%;
+    height: auto;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.img2{
+    max-width: 150%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 160px;
+    width: 150px;
+}
+.img3{
+    max-width: 200%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 210px;
+    width: 200px;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="image-container1">
+        <img src="images/image1.png" alt="Girly Image" class="img1">
+    </div>
+    <div class="signup-container">
+    <h1>Sign Up</h1>
+    
+    <form action="process_signup.php" method="post" id="signup" novalidate>
+        <div  class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        
+        <div  class="form-group">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div  class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        
+        <div  class="form-group">
+            <label for="password_confirmation">Repeat password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+        
+        <button type="submit">Sign up</button>
+    </form>
+</div>
+<div class="image-container2">
+    <img src="images/image3.png" alt="Girly Image" class="img2">
+</div>
+<div class="image-container3">
+    <img src="images/image2.png" alt="Girly Image" class="img3">
+</div>
+</div>
+</body>
+</html>
